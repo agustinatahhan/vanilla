@@ -1,0 +1,31 @@
+.nav {
+  background-color: var(--rosa100);
+}
+
+.navTop {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  height: 44px;
+}
+
+.logo {
+  width: 137px;
+  height: 37px;
+}
+
+.li {
+  color: white;
+  text-decoration: none;
+}
+
+.li:hover {
+  color: var(--verde100);
+}
+
+.li:active {
+  border-bottom: 4px solid var(--verde100);
+  color: #fff;
+}

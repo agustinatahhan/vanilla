@@ -1,0 +1,98 @@
+/* Home.module.css */
+.backgroundImage {
+  position: relative;
+  background-image: url("../../assets/img/cowork.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 574px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.backgroundImage::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(27, 22, 41, 0.65);
+  z-index: 1;
+}
+
+.content {
+  width: 40%;
+  z-index: 2;
+}
+
+.tituloBanner {
+  font-family: var(--os800);
+  font-size: 75px;
+  line-height: 71px;
+  text-align: center;
+  color: #fff;
+}
+
+.buttonSend {
+  width: 138px;
+  height: 50px;
+  border: none;
+  background: none;
+  border-radius: 30px;
+  background-color: var(--verde100);
+}
+
+.buttonSend:hover {
+  background-color: var(--rosa100);
+}
+
+.cardsComponent {
+  margin-top: 113px;
+  margin-bottom: 166px;
+}
+
+.cardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 369px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.25);
+  padding: 1rem;
+}
+
+.cohete {
+  width: 72px;
+  height: 74px;
+}
+
+@media (max-width: 768px) {
+  .tituloBanner {
+    font-family: var(--os800);
+    font-size: 55px;
+    line-height: 50px;
+    text-align: center;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .cardsComponent {
+    margin-top: 86px;
+    margin-bottom: 193px;
+  }
+}

@@ -1,0 +1,100 @@
+@font-face {
+  font-family: "Open Sans Light";
+  src: url("./assets/fonts/OpenSans-Light.ttf");
+}
+
+@font-face {
+  font-family: "Open Sans Regular";
+  src: url("./assets/fonts/OpenSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Open Sans Bold";
+  src: url("./assets/fonts/OpenSans-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Open Sans Extra Bold";
+  src: url("./assets/fonts/OpenSans-ExtraBold.ttf");
+}
+
+:root {
+  --rosa100: #ff93f4;
+  --verde100: #d4ff00;
+  --negroPrueba: #1b1629;
+  --os300: "Open Sans Light";
+  --os400: "Open Sans Regular";
+  --os700: "Open Sans Bold";
+  --os800: "Open Sans Extra Bold";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--os300);
+}
+
+.parrafos,
+.menu {
+  font-family: var(--os400);
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.parrafos {
+  line-height: 24px;
+  color: #1b1629;
+  margin: 0;
+}
+
+.menu {
+  line-height: 25px;
+}
+
+.tituloPrevio {
+  font-family: var(--os300);
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: var(--negroPrueba);
+}
+
+.tituloBanner1 {
+  font-family: var(--os800);
+  font-size: 75px;
+  line-height: 71px;
+  text-align: center;
+}
+
+.tituloBanner2 {
+  font-family: var(--os800);
+  font-size: 55px;
+  line-height: 50px;
+  text-align: center;
+}
+
+.button {
+  font-family: var(--os700);
+  font-size: 20px;
+  line-height: 27.24px;
+  text-align: center;
+  letter-spacing: 1px;
+  color: var(--negroPrueba);
+}
+
+.items {
+  font-family: var(--os800);
+  font-size: 40px;
+  line-height: 71px;
+  text-align: center;
+  color: var(--rosa100);
+}
