@@ -15,6 +15,9 @@ const Home = () => {
           <button className={`${style.buttonSend} button`}>Enviar</button>
         </div>
       </div>
+      <div className={style.elipse}>
+
+      </div>
       <div className={style.cardsComponent}>
         <div className={style.cardsContainer}>
           <div className={style.card}>
