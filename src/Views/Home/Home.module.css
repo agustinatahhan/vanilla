@@ -1,4 +1,9 @@
-/* Home.module.css */
+.home {
+  position: relative;
+  height: 1100px;
+}
+
+/* Componente header */
 .backgroundImage {
   position: relative;
   background-image: url("../../assets/img/cowork.jpg");
@@ -49,25 +54,14 @@
   background-color: var(--rosa100);
 }
 
-/* .elipse {
-  background-color: var(--rosa100);
-  width: 470px;
-  height: 470px;
-  opacity: 0px;
-  border-radius: 50%;
-  position: absolute;
-  top: 75%;
-  left: 85%;
-  z-index: 10;
-} */
-
+/* Componente de Cards */
 .cardsComponent {
   margin: 113px 197px 166px 197px;
 }
 
 .cardsContainer {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   align-items: center;
   justify-content: center;
   gap: 70px;
@@ -92,12 +86,51 @@
   height: 74px;
 }
 
+/* Círculos */
+.home::before,
+.home::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.home::before {
+  width: 490px;
+  height: 490px;
+  background: #ff93f4;
+  top: 387px;
+  right: 0;
+  transform: translateX(50%);
+}
+
+.home::after {
+  width: 152px;
+  height: 152px;
+  top: 1146px;
+  left: -76px;
+  gap: 0px;
+  background: rgba(255, 147, 244, 1);
+}
+
+/* Mobile */
 @media (max-width: 768px) {
+  .home {
+    height: 2040px;
+    overflow-x: hidden;
+  }
   .tituloBanner {
     font-family: var(--os800);
     font-size: 55px;
     line-height: 50px;
     text-align: center;
+  }
+  .cardsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
   }
 
   .content {
@@ -105,23 +138,28 @@
   }
 
   .cardsComponent {
-    /* margin-top: 86px;
-    margin-bottom: 193px; */
     margin: 86px 0 193px 0;
   }
 
   .cardsContainer {
     gap: 40px;
   }
+
+  .home::before,
+  .home::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    z-index: 10;
+  }
+
+  .home::before {
+    top: 387px;
+    right: revert-layer;
+  }
+
+  .home::after {
+    top: 1964px;
+    left: -76px;
+  }
 }
-
-/* Ellipse 1 */
-
-/* position: absolute;
-width: 490px;
-height: 490px;
-left: 1204px;
-top: 387px; */
-
-/* Rosa 100 */
-/* background: #FF93F4; */

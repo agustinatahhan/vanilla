@@ -1,3 +1,4 @@
+/* Fuentes */
 @font-face {
   font-family: "Open Sans Light";
   src: url("./assets/fonts/OpenSans-Light.ttf");
@@ -18,6 +19,7 @@
   src: url("./assets/fonts/OpenSans-ExtraBold.ttf");
 }
 
+/* Estilos generales */
 :root {
   --rosa100: #ff93f4;
   --verde100: #d4ff00;
@@ -43,6 +45,7 @@ body {
   font-family: var(--os300);
 }
 
+/* Estilos de fuentes personalizados */
 .parrafos,
 .menu {
   font-family: var(--os400);

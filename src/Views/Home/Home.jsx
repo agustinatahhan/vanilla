@@ -3,7 +3,7 @@ import style from "./Home.module.css";
 import cohete from "../../assets/img/cohete.png";
 const Home = () => {
   return (
-    <div>
+    <div className={style.home}>
       <div className={style.backgroundImage}>
         <div className={style.content}>
           <h2 className="textoPrevio text-white mb-3">
@@ -14,9 +14,6 @@ const Home = () => {
           </h2>
           <button className={`${style.buttonSend} button`}>Enviar</button>
         </div>
-      </div>
-      <div className={style.elipse}>
-
       </div>
       <div className={style.cardsComponent}>
         <div className={style.cardsContainer}>
@@ -51,3 +48,4 @@ const Home = () => {
 };
 
 export default Home;
+

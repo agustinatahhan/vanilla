@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../../assets/img/logo.png";
 import style from "./Nav.module.css";
-const Nav2 = () => {
+
+const Nav = () => {
+  const [selected, setSelected] = useState("Inicio");
+
+  const handleSelect = (section) => {
+    setSelected(section);
+  };
+
   return (
     <div className="container-fluid m-0 p-0">
       <div className={style.navTop}>
@@ -10,12 +17,12 @@ const Nav2 = () => {
       <nav
         className={`navbar navbar-expand-lg bg-tertiary p-3 fixed ${style.nav}`}
       >
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
+        <div className="container-fluid">
+          <a className="navbar-brand mb-3 mb-lg-0" href="#">
             <img className={style.logo} src={logo} alt="logo" />
           </a>
           <button
-            className={`navbar-toggler`}
+            className={`navbar-toggler mb-3 mb-lg-0 ${style.btnNav}`}
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
@@ -23,26 +30,49 @@ const Nav2 = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span className="navbar-toggler-icon"></span>
+            <span className={`navbar-toggler-icon ${style.btnNavIcon}`}></span>
           </button>
           <div
             className={`collapse navbar-collapse`}
             id="navbarSupportedContent"
           >
-            {" "}
-            <ul class="navbar-nav ms-auto text-start menu">
-              <li className={`nav-item mx-3`}>
-                <a className={` ${style.li}`} href="#">
+            <ul className="navbar-nav ms-auto text-start menu">
+              <li
+                className={`nav-item mx-lg-3 my-3 my-lg-0 ${
+                  selected === "Inicio" ? style.active : ""
+                }`}
+              >
+                <a
+                  className={` ${style.li}`}
+                  href="#"
+                  onClick={() => handleSelect("Inicio")}
+                >
                   Inicio
                 </a>
               </li>
-              <li className={`nav-item mx-3`}>
-                <a className={` ${style.li}`} href="#">
+              <li
+                className={`nav-item mx-lg-3 my-3 my-lg-0 ${
+                  selected === "Sección 2" ? style.active : ""
+                }`}
+              >
+                <a
+                  className={` ${style.li}`}
+                  href="#"
+                  onClick={() => handleSelect("Sección 2")}
+                >
                   Sección 2
                 </a>
               </li>
-              <li className={`nav-item mx-3`}>
-                <a className={` ${style.li}`} href="#">
+              <li
+                className={`nav-item mx-lg-3 my-3 my-lg-0 ${
+                  selected === "Sección 3" ? style.active : ""
+                }`}
+              >
+                <a
+                  className={` ${style.li}`}
+                  href="#"
+                  onClick={() => handleSelect("Sección 3")}
+                >
                   Sección 3
                 </a>
               </li>
@@ -54,4 +84,4 @@ const Nav2 = () => {
   );
 };
 
-export default Nav2;
+export default Nav;
