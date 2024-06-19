@@ -1,4 +1,8 @@
-# Cómo correr el código?
+# Desafío Vanilla
+#### Para este desafío utilicé las siguientes tecnologías:
+##### HTML, CSS, React.js y Bootstrap
+
+## Cómo correr el código?
 ### Paso 1)
 ##### Abrir la terminal en la carpeta vanilla
 ### Paso 2)
