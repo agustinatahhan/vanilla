@@ -1,6 +1,6 @@
 .home {
   position: relative;
-  height: 1100px;
+  /* height: 1100px; */
 }
 
 /* Componente header */
@@ -116,7 +116,7 @@
 /* Mobile */
 @media (max-width: 768px) {
   .home {
-    height: 2040px;
+    /* height: 2040px; */
     overflow-x: hidden;
   }
   .tituloBanner {
